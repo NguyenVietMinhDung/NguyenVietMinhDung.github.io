@@ -27,11 +27,11 @@
   position: relative;
   overflow: hidden; }
   .Header__header .Header__background {
-    width: 100%;
+    width: calc(100% + 100px);
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -50px;
     transition: all 0.25s ease-out 0s;
     background-size: cover;
     background: url(assets/images/e77bcc04ccec2db3565e66ce9b8e436d.png) no-repeat center; }
@@ -176,6 +176,34 @@ body {
 .NavbarBrand__nav-brand {
   width: 50px;
   height: 50px; }
+@media (min-width: 1000px) {
+  .NavbarMenu__nav-menu .NavbarMenu__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; } }
+
+@media (max-width: 1000px) {
+  .NavbarMenu__nav-menu {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    .NavbarMenu__nav-menu .NavbarMenu__content {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      overflow: hidden;
+      transition: max-height .3s ease-out 0s;
+      box-shadow: 0 10px 15px 0 #868686;
+      background-color: #ffffff; }
+      .NavbarMenu__nav-menu .NavbarMenu__content.NavbarMenu__is-visible {
+        max-height: 200px;
+        padding: 3px 12px; }
+      .NavbarMenu__nav-menu .NavbarMenu__content.NavbarMenu__is-invisible {
+        max-height: 0;
+        padding: 0 12px; } }
 .AboutMe__about-me {
   display: flex;
   flex-flow: column wrap;
@@ -244,34 +272,6 @@ body {
       .AboutMe__about-me .AboutMe__content {
         padding: 0 15px;
         width: auto; } }
-@media (min-width: 1000px) {
-  .NavbarMenu__nav-menu .NavbarMenu__content {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; } }
-
-@media (max-width: 1000px) {
-  .NavbarMenu__nav-menu {
-    position: absolute;
-    top: 95px;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%; }
-    .NavbarMenu__nav-menu .NavbarMenu__content {
-      display: flex;
-      flex-direction: column;
-      margin: 0 15px;
-      overflow: hidden;
-      transition: max-height .3s ease-out 0s;
-      box-shadow: 0 10px 15px 0 #868686;
-      background-color: #ffffff; }
-      .NavbarMenu__nav-menu .NavbarMenu__content.NavbarMenu__is-visible {
-        max-height: 200px;
-        padding: 3px 12px; }
-      .NavbarMenu__nav-menu .NavbarMenu__content.NavbarMenu__is-invisible {
-        max-height: 0;
-        padding: 0 12px; } }
 @media (min-width: 1000px) {
   .NavbarItem__nav-item {
     position: relative; }
