@@ -151,8 +151,12 @@ body {
   width: 100%; }
 .App__loader {
   position: absolute;
-  top: calc(50% - 25px);
-  left: calc(50% - 25px); }
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
 .Button__btn {
   padding: 0 40px;
   width: fit-content;
