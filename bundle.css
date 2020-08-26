@@ -73,6 +73,53 @@ body {
   width: 40px;
   height: 40px;
   padding: 0 5px; }
+.ProgressBarItem__progress-bar-item {
+  display: flex;
+  flex-flow: column wrap; }
+  .ProgressBarItem__progress-bar-item:not(:first-child) {
+    margin-top: 25px; }
+  .ProgressBarItem__progress-bar-item .ProgressBarItem__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__name,
+    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__value {
+      text-transform: inherit;
+      color: #32333c;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400; }
+  .ProgressBarItem__progress-bar-item .ProgressBarItem__bar {
+    overflow: hidden;
+    height: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #d9d9d9; }
+    .ProgressBarItem__progress-bar-item .ProgressBarItem__bar .ProgressBarItem__percentage {
+      height: 5px;
+      border-radius: 5px;
+      background-color: #754ef9; }
+.Spinner__spinner .Spinner__background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.Spinner__spinner .Spinner__animated-part {
+  width: 60px;
+  height: 60px;
+  animation: Spinner__spin 2s linear infinite;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #754ef9;
+  border-radius: 50%; }
+
+@keyframes Spinner__spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .Event__event {
   padding: 20px 0; }
   .Event__event .Event__organization {
@@ -105,53 +152,6 @@ body {
     font-size: 14px;
     font-weight: 100;
     padding-bottom: 10px; }
-.Spinner__spinner .Spinner__background {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: center; }
-
-.Spinner__spinner .Spinner__animated-part {
-  width: 60px;
-  height: 60px;
-  animation: Spinner__spin 2s linear infinite;
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #754ef9;
-  border-radius: 50%; }
-
-@keyframes Spinner__spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-.ProgressBarItem__progress-bar-item {
-  display: flex;
-  flex-flow: column wrap; }
-  .ProgressBarItem__progress-bar-item:not(:first-child) {
-    margin-top: 25px; }
-  .ProgressBarItem__progress-bar-item .ProgressBarItem__header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
-    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__name,
-    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__value {
-      text-transform: inherit;
-      color: #32333c;
-      font-family: "Poppins", sans-serif;
-      font-size: 16px;
-      font-weight: 400; }
-  .ProgressBarItem__progress-bar-item .ProgressBarItem__bar {
-    overflow: hidden;
-    height: 5px;
-    margin-top: 15px;
-    border-radius: 5px;
-    background-color: #d9d9d9; }
-    .ProgressBarItem__progress-bar-item .ProgressBarItem__bar .ProgressBarItem__percentage {
-      height: 5px;
-      border-radius: 5px;
-      background-color: #754ef9; }
 .Brand__brand {
   position: relative;
   width: fit-content; }
