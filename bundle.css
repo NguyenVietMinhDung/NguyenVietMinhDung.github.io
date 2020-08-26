@@ -20,6 +20,9 @@
 .ProgressBars__progress-bars {
   width: 100%;
   margin: 0; }
+.SocialNetworks__social-networks {
+  display: flex;
+  flex-flow: row wrap; }
 body {
   text-transform: inherit;
   color: #8a8fa3;
@@ -35,9 +38,6 @@ body {
   body ul {
     padding: 0;
     list-style-type: none; }
-.SocialNetworks__social-networks {
-  display: flex;
-  flex-flow: row wrap; }
 .TimeLine__timeline {
   position: relative;
   display: flex;
@@ -69,6 +69,10 @@ body {
     display: flex;
     padding-left: 58px;
     flex-flow: column wrap; }
+.SocialNetworkItem__social-network-item {
+  width: 40px;
+  height: 40px;
+  padding: 0 5px; }
 .Spinner__spinner .Spinner__background {
   display: flex;
   width: 100%;
@@ -116,10 +120,6 @@ body {
       height: 5px;
       border-radius: 5px;
       background-color: #754ef9; }
-.SocialNetworkItem__social-network-item {
-  width: 40px;
-  height: 40px;
-  padding: 0 5px; }
 .Event__event {
   padding: 20px 0; }
   .Event__event .Event__organization {
