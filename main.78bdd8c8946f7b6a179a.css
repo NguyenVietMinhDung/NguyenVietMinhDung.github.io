@@ -17,12 +17,6 @@
   .Button__btn:hover {
     color: #754ef9;
     background-color: #ffffff; }
-.ProgressBars__progress-bars {
-  width: 100%;
-  margin: 0; }
-.SocialNetworks__social-networks {
-  display: flex;
-  flex-flow: row wrap; }
 body {
   text-transform: inherit;
   color: #8a8fa3;
@@ -38,6 +32,12 @@ body {
   body ul {
     padding: 0;
     list-style-type: none; }
+.ProgressBars__progress-bars {
+  width: 100%;
+  margin: 0; }
+.SocialNetworks__social-networks {
+  display: flex;
+  flex-flow: row wrap; }
 .TimeLine__timeline {
   position: relative;
   display: flex;
@@ -69,12 +69,6 @@ body {
     display: flex;
     padding-left: 58px;
     flex-flow: column wrap; }
-.ErrorBoundary__error-boundary {
-  text-align: center; }
-.SocialNetworkItem__social-network-item {
-  width: 40px;
-  height: 40px;
-  padding: 0 5px; }
 .Spinner__spinner .Spinner__background {
   display: flex;
   width: 100%;
@@ -96,6 +90,36 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+.ProgressBarItem__progress-bar-item {
+  display: flex;
+  flex-flow: column wrap; }
+  .ProgressBarItem__progress-bar-item:not(:first-child) {
+    margin-top: 25px; }
+  .ProgressBarItem__progress-bar-item .ProgressBarItem__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__name,
+    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__value {
+      text-transform: inherit;
+      color: #32333c;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400; }
+  .ProgressBarItem__progress-bar-item .ProgressBarItem__bar {
+    overflow: hidden;
+    height: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #d9d9d9; }
+    .ProgressBarItem__progress-bar-item .ProgressBarItem__bar .ProgressBarItem__percentage {
+      height: 5px;
+      border-radius: 5px;
+      background-color: #754ef9; }
+.SocialNetworkItem__social-network-item {
+  width: 40px;
+  height: 40px;
+  padding: 0 5px; }
 .Event__event {
   padding: 20px 0; }
   .Event__event .Event__organization {
@@ -128,32 +152,6 @@ body {
     font-size: 14px;
     font-weight: 100;
     padding-bottom: 10px; }
-.ProgressBarItem__progress-bar-item {
-  display: flex;
-  flex-flow: column wrap; }
-  .ProgressBarItem__progress-bar-item:not(:first-child) {
-    margin-top: 25px; }
-  .ProgressBarItem__progress-bar-item .ProgressBarItem__header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
-    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__name,
-    .ProgressBarItem__progress-bar-item .ProgressBarItem__header .ProgressBarItem__value {
-      text-transform: inherit;
-      color: #32333c;
-      font-family: "Poppins", sans-serif;
-      font-size: 16px;
-      font-weight: 400; }
-  .ProgressBarItem__progress-bar-item .ProgressBarItem__bar {
-    overflow: hidden;
-    height: 5px;
-    margin-top: 15px;
-    border-radius: 5px;
-    background-color: #d9d9d9; }
-    .ProgressBarItem__progress-bar-item .ProgressBarItem__bar .ProgressBarItem__percentage {
-      height: 5px;
-      border-radius: 5px;
-      background-color: #754ef9; }
 .Brand__brand {
   position: relative;
   width: fit-content; }
@@ -169,4 +167,4 @@ body {
     color: #754ef9;
     font-size: 12px; }
 
-/*# sourceMappingURL=main.a0ed122646c3792bfdb7.css.map*/
+/*# sourceMappingURL=main.78bdd8c8946f7b6a179a.css.map*/
