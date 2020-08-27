@@ -17,9 +17,6 @@
   .Button__btn:hover {
     color: #754ef9;
     background-color: #ffffff; }
-.ProgressBars__progress-bars {
-  width: 100%;
-  margin: 0; }
 body {
   text-transform: inherit;
   color: #8a8fa3;
@@ -35,6 +32,9 @@ body {
   body ul {
     padding: 0;
     list-style-type: none; }
+.ProgressBars__progress-bars {
+  width: 100%;
+  margin: 0; }
 .SocialNetworks__social-networks {
   display: flex;
   flex-flow: row wrap; }
@@ -167,4 +167,4 @@ body {
     color: #754ef9;
     font-size: 12px; }
 
-/*# sourceMappingURL=main.2ac5a953d334e17ce3eb.css.map*/
+/*# sourceMappingURL=main.9dc5eebf6b4495dafc99.css.map*/
